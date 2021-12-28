@@ -63,3 +63,29 @@ let video = {
 };
 
 video.printVideos();
+
+/*
+ Higher order functions: It accepts another function as an argument or returns another function as a result
+
+ Callback function: Passed to another function as an argument and executed inside the functions
+*/
+
+function boilWater() {
+  console.log("Water is boiled");
+}
+
+function addTeaLeaves() {
+  console.log("Tea leaved added ");
+}
+
+function addMilk() {
+  console.log("Milk is added");
+}
+
+function prepareTea(cb1, cb2, cb3) {
+  cb1();
+  cb2();
+  cb3();
+}
+
+prepareTea(boilWater, addTeaLeaves, addMilk);
