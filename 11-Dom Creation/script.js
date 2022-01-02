@@ -90,7 +90,7 @@ result.removeChild(a);
 **************************************************************************
 innerHTML
 
-newElement.innerHTML("htmltag")
+newElement.innerHTML="htmlcontent"
 **************************************************************************
 */
 
